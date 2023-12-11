@@ -1,123 +1,132 @@
-/* 
-    Primary Color: #000000 (black)
-    Secondary Color: #FFFFFF (white)
+/*
+    Primary Color: #000 (black)
+    Secondary Color: #fff (white)
     Accent Color 1: #61cdff (blue)
-    Accent Color 2: #7404A8 (purple)
-    Accent Color 3: #18D189 (green) 
+    Accent Color 2: #7404a8 (purple)
+    Accent Color 3: #18d189 (green)
 */
 
 body {
-    background-color: #000000;
-    font-family: 'Cantarell', sans-serif;
-    font-size: 18px;
-    font-weight: 100; 
-    line-height: 1.6; 
-    color: #ffffff;
-  }
-  
-  h1, h2, h3, h4 {
-    line-height: 1.6;
-  }
-  h1 {
-    background-color: #000000;
-    font-family: 'Rokkitt', serif;
-    font-size: 40px;
-    font-weight: 400;
-    color: #ffffff;  
-  }
-  
-  h2 {
-    background-color: #000000;
-    font-family: 'Signika Negative', sans-serif;
-    font-size: 32px;
-    font-weight: 400;
-    color: #ffffff;  
-  }
-  
-  h3 {
-    background-color: #000000;
-    font-family: 'Signika Negative', sans-serif;
-    font-size: 30px;
-    font-weight: 400;
-    color: #ffffff; 
-  }
-  h4 {
-    background-color: #000000;
-    font-family: 'Signika Negative', sans-serif;
-    font-size: 28px;
-    font-weight: 300;
-    color: #ffffff; 
-  }
+  background-color: #000;
+  font-family: 'Cantarell', sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 1.6;
+  color: #fff;
+}
 
-  img {
-    width: 100%;
-  }
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.6;
+}
 
-  a {
-    color: #61cdff;
-    text-decoration: none;
-  }
-  a:visited { 
-    color: #7404A8;
-  }
-  a:hover  {
-    color: #61cdff;
-    text-decoration: underline;
-  }
-  a:focus  {
-    color: #61cdff;
-    text-decoration: underline;
-  }
-  a:active { 
-    color: #18D189;
-  }
+h1 {
+  background-color: #000;
+  font-family: 'Rokkitt', serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: #fff;
+}
 
-  .button {
-    display: inline-block; 
-    background-color: #61cdff;
-    color: #000000; 
-    font-weight: 400;
-    padding: 10px;
-    border-radius: 3px;
-    border-bottom: 2px solid #7404A8;
-    transition: 0.2s opacity;
-  }
+h2 {
+  background-color: #000;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #fff;
+}
 
-  .button:hover {
-    background-color: #7404A8;
-    color: #ffffff;
-    text-decoration: underline;
-  }
+h3 {
+  background-color: #000;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #fff;
+}
 
-  .button:focus {
-    background-color: #7404A8;
-    color: #ffffff;
-    text-decoration: underline;
-  }
+h4 {
+  background-color: #000;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  color: #fff;
+}
 
-  .button:active {
-    background-color: #18D189;
-    color: #7404A8;
-  }
+img {
+  width: 100%;
+}
 
-  .button.contact {
-    background-color: transparent;
-    color: #ffffff;
-    text-transform: uppercase;
-    border: 2px solid #61cdff;
-  }
+a {
+  color: #61cdff;
+  text-decoration: none;
+}
 
-  .button.contact:hover {
-    background-color: #7404A8;
-    color: #ffffff;
-  }
+a:visited {
+  color: #7404a8;
+}
 
-  .button.contact:focus {
-    background-color: #7404A8;
-    color: #ffffff;
-  }
+a:hover {
+  color: #61cdff;
+  text-decoration: underline;
+}
 
-  .button.contact:active {
-    background-color: #18D189;
-    color: #7404A8; 
-  }
+a:focus {
+  color: #61cdff;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #18d189;
+}
+
+.button {
+  display: inline-block;
+  background-color: #61cdff;
+  color: #000;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #7404a8;
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  background-color: #7404a8;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.button:focus {
+  background-color: #7404a8;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #18d189;
+  color: #7404a8;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  border: 2px solid #61cdff;
+}
+
+.button.contact:hover {
+  background-color: #7404a8;
+  color: #fff;
+}
+
+.button.contact:focus {
+  background-color: #7404a8;
+  color: #fff;
+}
+
+.button.contact:active {
+  background-color: #18d189;
+  color: #7404a8;
+}
