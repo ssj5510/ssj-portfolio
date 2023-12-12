@@ -6,6 +6,28 @@
     Accent Color 3: #18d189 (green)
 */
 
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #000;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+}
+
+.box-shadow {
+  /* start ------------ */
+  width: [object Object]px;
+  height: [object Object]px;
+  background: #000;
+  border-bottom: solid #ededed 1px;
+  box-shadow: 5px 5px 20px rgba(209, 209, 209, 0.5);
+  -webkit-box-shadow: 5px 5px 20px rgba(209, 209, 209, 0.5);
+  -moz-box-shadow: 5px 5px 20px rgba(209, 209, 209, 0.5);
+}
+
 body {
   background-color: #000;
   font-family: 'Cantarell', sans-serif;
@@ -13,6 +35,20 @@ body {
   font-weight: 100;
   line-height: 1.6;
   color: #fff;
+}
+
+footer {
+  background-color: #000;
+  text-align: center;
+  margin: 0 3px;
+}
+
+footer img {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin: 0 10px;
+  padding-top: 15px;
 }
 
 h1,
@@ -129,4 +165,149 @@ a:active {
 .button.contact:active {
   background-color: #18d189;
   color: #7404a8;
+}
+
+/* Layout styling */
+
+.center {
+  text-align: center;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25 top and bottom, 0 left and right */
+}
+
+#work .row {
+  text-align: left;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #fff;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+}
+
+nav > ul > li > a:visited {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #7404a8;
+}
+
+nav > ul > li > a:hover {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #61cdff;
+}
+
+nav > ul > li > a:focus {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #61cdff;
+}
+
+nav > ul > li > a:active {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #18d189;
+}
+
+#hero {
+  background-color: #000;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+#work img {
+  max-width: 1500px;
+}
+
+.copyright {
+  text-align: center;
+}
+
+#about {
+  text-align: center;
+  padding-top: 20px;
+}
+
+#about img {
+  padding: 10px 40px 5px;
+  margin: 0 5px;
+  max-width: 650px;
+}
+
+.intro {
+  text-align: left;
+  padding-left: 45px;
+  padding-right: 45px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.resume {
+  text-align: left;
+  padding-left: 45px;
+  margin-left: 10px;
+}
+
+.home-mywork {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.hi-ssj {
+  padding-top: 20px;
+}
+
+.skills-tools {
+  text-align: left;
+  margin: 0 50px;
+}
+
+.hh-intro {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+#haunted-haven {
+  text-align: center;
+}
+
+#haunted-haven img {
+  max-width: 1500px;
+}
+
+.hh-toctitle {
+  text-align: center;
+}
+
+.hh-toc {
+  text-align: left;
+  margin: 0 50px;
 }
