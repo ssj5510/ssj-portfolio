@@ -18,12 +18,9 @@
 </head>
 
 <body>
-    <header>
-        <div>
-            <picture>
-                <source srcset="./img/ssj-designs-logo-150x50.svg" media="(max-width: 767px)">
-                <img src="./img/ssj-designs-logo-150x50.svg" alt="SSJ Designs Logo">
-            </picture>
+    <header class="box-shadow">
+        <div class="container">
+                <a><img class="logo" src="./img/ssj-designs-logo-150x50.svg" alt="SSJ Designs Logo"></a>
             <nav>
                 <ul>
                     <li><a href="index.html">My Work</a></li>
@@ -34,12 +31,15 @@
         </div>
     </header>
     <main id="haunted-haven">
-        <h1>Haunted Haven</h1>
-        <p>
-            A mobile app where users can shop for Halloween-themed home decor, gather inspiration and support small
-            spooky businesses.
-        </p>
-
+        <div class="container">
+            <div class="hh-intro">
+                <h1>Haunted Haven</h1>
+                <p>
+                    A mobile app where users can shop for Halloween-themed home decor, gather inspiration and support small
+                    spooky businesses.
+                </p>
+            </div>
+        </div>
         <div>
             <picture>
                 <source srcset="./img/haunted-haven/1x/hh-thumbnail-1x.jpg" media="(max-width: 767px)">
@@ -49,20 +49,24 @@
         </div>
 
         <div>
-            <h2>Table of Contents</h2>
-            <ul>
-                <li><a href="#hh-about">About Haunted Haven</a></li>
-                <li><a href="#hh-userstories">User Stories</a></li>
-                <li><a href="#hh-userflow">User Flow</a></li>
-                <li><a href="#hh-lowfi">Low-Fidelity Wireframes</a></li>
-                <li><a href="#hh-midfi">Mid-Fidelity Wireframes</a></li>
-                <li><a href="#hh-testresults">Usability Testing & Results</a></li>
-                <li><a href="#hh-highfi-grey">High-Fidelity Wireframes (Greyscale)</a></li>
-                <li><a href="#hh-brandguide">Brand Guidelines</a></li>
-                <li><a href="#hh-finaldesigns">Final Designs</a></li>
-                <li><a href="#hh-mockups">Mockups</a></li>
-                <li><a href="#hh-reflection">Reflection</a></li>
-            </ul>
+            <div class="hh-toctitle">
+                <h2>Table of Contents</h2>
+            </div>
+            <div class="hh-toc">
+                <ul>
+                    <li><a href="#hh-about">About Haunted Haven</a></li>
+                    <li><a href="#hh-userstories">User Stories</a></li>
+                    <li><a href="#hh-userflow">User Flow</a></li>
+                    <li><a href="#hh-lowfi">Low-Fidelity Wireframes</a></li>
+                    <li><a href="#hh-midfi">Mid-Fidelity Wireframes</a></li>
+                    <li><a href="#hh-testresults">Usability Testing & Results</a></li>
+                    <li><a href="#hh-highfi-grey">High-Fidelity Wireframes (Greyscale)</a></li>
+                    <li><a href="#hh-brandguide">Brand Guidelines</a></li>
+                    <li><a href="#hh-finaldesigns">Final Designs</a></li>
+                    <li><a href="#hh-mockups">Mockups</a></li>
+                    <li><a href="#hh-reflection">Reflection</a></li>
+                </ul>
+            </div>
         </div>
 
         <div>
@@ -237,8 +241,8 @@
 
     </main>
 
-    <footer id="contact">
-        <div> <!-- start footer content -->
+    <footer id="footer">
+        <div class="container"> <!-- start footer content -->
             <h2>Get In Touch</h2>
             <p>
                 I'd love to get to know more about you and your design needs, and partner together to create something
@@ -254,7 +258,9 @@
                 <img src="./img/icons/behance-icon.svg" alt="Icon for Behance URL">
             </a>
         </div>
-        <p>Copyright Stephanie Shepherd Jenkins 2023</p>
+        <div class="copyright">
+            <p>Copyright Stephanie Shepherd Jenkins 2023</p>
+        </div>
     </footer>
 </body>
 
