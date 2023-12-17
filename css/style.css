@@ -31,7 +31,7 @@ header {
 body {
   background-color: #000;
   font-family: 'Cantarell', sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 100;
   line-height: 1.6;
   color: #fff;
@@ -55,13 +55,13 @@ h1,
 h2,
 h3,
 h4 {
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 h1 {
   background-color: #000;
   font-family: 'Rokkitt', serif;
-  font-size: 40px;
+  font-size: 2.5em;
   font-weight: 400;
   color: #fff;
 }
@@ -69,33 +69,35 @@ h1 {
 h2 {
   background-color: #000;
   font-family: 'Signika Negative', sans-serif;
-  font-size: 32px;
-  font-weight: 400;
+  font-size: 2em;
+  font-weight: 300;
   color: #fff;
 }
 
 h3 {
   background-color: #000;
   font-family: 'Signika Negative', sans-serif;
-  font-size: 30px;
-  font-weight: 400;
+  font-size: 1.75em;
+  font-weight: 300;
   color: #fff;
 }
 
 h4 {
   background-color: #000;
   font-family: 'Signika Negative', sans-serif;
-  font-size: 28px;
-  font-weight: 300;
+  font-size: 1.25em;
+  font-weight: 200;
   color: #fff;
 }
 
 img {
   width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
-  color: #61cdff;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -104,13 +106,11 @@ a:visited {
 }
 
 a:hover {
-  color: #61cdff;
-  text-decoration: underline;
+  opacity: 0.8;
 }
 
 a:focus {
   color: #61cdff;
-  text-decoration: underline;
 }
 
 a:active {
@@ -119,30 +119,31 @@ a:active {
 
 .button {
   display: inline-block;
-  background-color: #61cdff;
-  color: #000;
+  background-color: #7404a8;
+  color: #fff;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #7404a8;
+  border-bottom: 1px solid #fff;
   transition: 0.2s opacity;
 }
 
 .button:hover {
-  background-color: #7404a8;
-  color: #fff;
-  text-decoration: underline;
+  opacity: 0.8;
 }
 
 .button:focus {
-  background-color: #7404a8;
-  color: #fff;
-  text-decoration: underline;
+  opacity: 0.8;
+  color: #61cdff;
 }
 
 .button:active {
-  background-color: #18d189;
-  color: #7404a8;
+  color: #61cdff;
+}
+
+.button:visited {
+  opacity: 0.5;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .button.contact {
@@ -163,8 +164,7 @@ a:active {
 }
 
 .button.contact:active {
-  background-color: #18d189;
-  color: #7404a8;
+  opacity: 0.7;
 }
 
 /* Layout styling */
@@ -310,4 +310,157 @@ nav > ul > li > a:active {
 .hh-toc {
   text-align: left;
   margin: 0 50px;
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+@keyframes cloud-move {
+  from { transform: translate(0, 50px); }
+
+  to { transform: translate(200px, 50px); }
+}
+
+@keyframes cloud-move-reverse {
+  from { transform: translate(446px, 48px); }
+  to { transform: translate(100px, 48px); }
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.cloud-back {
+  animation: 40s cloud-move-reverse infinite alternate linear;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: center;
+  }
+
+  nav {
+    width: auto;
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #about h1 {
+    clear: both;
+    text-align: center;
+  }
+
+  #about h2 {
+    margin-bottom: 0;
+    margin-top: 30px;
+  }
+
+  #about h3 {
+    margin-top: 0;
+  }
+
+  .skills {
+    text-align: center;
+  }
+
+  .tools {
+    text-align: center;
+  }
+
+  .skills-tools {
+    margin: 0 20px;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+  }
+
+  nav {
+    width: auto;
+    margin-top: 15px;
+    text-align: right;
+    float: right;
+  }
+
+  .col-md-7 {
+    width: 58.33%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+  header {
+    text-align: unset;
+  }
+
+  nav {
+    width: auto;
+    margin-top: 15px;
+    text-align: right;
+    float: right;
+  }
+
+  .col-md-7 {
+    width: 58.33%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
