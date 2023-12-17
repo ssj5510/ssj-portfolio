@@ -428,8 +428,12 @@ Large devices (1024px or larger)
     float: right;
   }
 
-  .col-md-7 {
-    width: 58.33%;
+  .col-lg-7 {
+    width: 60%;
+  }
+
+  .col-lg-5 {
+    width: 40%;
   }
 
   .container {
