@@ -12,8 +12,7 @@
 
 header {
   background-color: #000;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   position: relative;
 }
 
@@ -179,6 +178,7 @@ a:active {
 
 .row {
   margin: 25px 0; /* 25 top and bottom, 0 left and right */
+  padding-top: 20px;
 }
 
 #work .row {
@@ -188,16 +188,13 @@ a:active {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 175px;
 }
 
 nav > ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav > ul > li > a {
@@ -233,6 +230,43 @@ nav > ul > li > a:active {
   text-transform: uppercase;
   font-weight: 700;
   color: #18d189;
+}
+
+/* Nav and hamburger menu */
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+}
+
+/* responsive */
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgb(255, 255, 255);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 #hero {
@@ -365,10 +399,31 @@ Medium devices (640px and larger)
     text-align: center;
   }
 
+  .logo {
+    max-width: 250px;
+  }
+
   nav {
     width: auto;
     margin-top: 5px;
     text-align: center;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   .col-md-6 {
