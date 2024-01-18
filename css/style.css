@@ -195,6 +195,41 @@ a:active {
   margin: 25px 0;
 }
 
+.page-myworktitle {
+  h2 {
+    text-align: center;
+  }
+}
+
+#page-mywork .row {
+  text-align: left;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+#page-mywork .mywork-animaterow {
+  text-align: left;
+  margin: 25px 0;
+}
+
+#mywork-hero {
+  background-color: #1f1f1f;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: #f5f5f5;
+  padding-bottom: 30px;
+  padding-top: 20px;
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    background-color: #1f1f1f;
+    color: #f5f5f5;
+  }
+}
+
 .logo {
   max-width: 175px;
 }
@@ -403,6 +438,52 @@ nav > ul > li > a:active {
   }
 }
 
+.yy-intro {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+#yesteryear {
+  background-color: #1f1f1f;
+  text-align: center;
+  color: #f5f5f5;
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    background-color: #1f1f1f;
+    color: #f5f5f5;
+  }
+}
+
+#yesteryear img {
+  max-width: 1500px;
+}
+
+.yy-toctitle {
+  text-align: center;
+}
+
+.yy-toc {
+  text-align: left;
+  margin: 0 50px;
+  color: #f5f5f5;
+
+  a:visited {
+    color: #f5f5f5;
+  }
+
+  a:active {
+    color: #7421ab;
+  }
+}
+
+.androidproto {
+  padding-bottom: 40px;
+}
+
 @keyframes color-change {
   0% {
     fill: #edc655;
@@ -514,10 +595,12 @@ Medium devices (640px and larger)
 
   .skills {
     text-align: center;
+    margin-top: 20px;
   }
 
   .tools {
     text-align: center;
+    margin-top: 0;
   }
 
   .skills-tools {
